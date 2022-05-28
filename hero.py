@@ -9,3 +9,4 @@ class Question:
 question_1 = Question("Текст вопроса?", "правильный ответ")
 print(question_1.check("test"))
 print(question_1.check("правильный ответ"))
+print()
