@@ -1,14 +1,21 @@
 
-class Fish():
+class Employee():
+    """Класс Сотрудника, который описывает Ф"""
 
-    def __init__(self, name):
-        self.name = name
-
-    def swim(self):
-        print("Я плаваю")
+    def __init__(self, f, i, o):
+        self.f = f
+        self.i = i
+        self.o = o
 
     def __repr__(self):
-        return "Рыбка " + self.name
+        return f"{self.f} {self.i[0]}.{self.o[0]}."
 
-fish = Fish("Дори")
-print(fish)
+employees = [
+    Employee("Питерская", "Анисья", "Григорьевна"),
+    Employee("Меньшова", "Изольда", "Александровна"),
+    Employee("Кручинина", "Валерия", "Тимофеевна"),
+]
+
+print(employees)
+print(employees[0].__doc__)
+
